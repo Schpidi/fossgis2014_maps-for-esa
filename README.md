@@ -17,11 +17,15 @@ grunt serve
 
 ## Creating presentation
 
-After creating a new repository at GitHub run the following.
+After creating a new repository at GitHub without initializing it run the 
+following.
 
 ```bash
-git clone git@github.com:Schpidi/fossgis2014_maps-for-esa.git
+mkdir fossgis2014_maps-for-esa
+cd fossgis2014_maps-for-esa
+git init
 git branch -m master gh-pages
+git remote add git@github.com:Schpidi/fossgis2014_maps-for-esa.git
 git submodule add https://github.com/Schpidi/reveal.js.git
 cd reveal.js/
 git checkout eox_box
